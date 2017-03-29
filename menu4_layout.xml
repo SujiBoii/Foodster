@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#37c40c"
+    android:id="@+id/menu4">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameET"
+        android:layout_marginBottom="20dp"
+        android:hint="Name"
+        android:layout_above="@+id/geburtsdatumET"
+        android:layout_alignEnd="@+id/buttonLogout"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/geburtsdatumET"
+        android:inputType="date"
+        android:hint="Geburtsdatum"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/infoET"
+        android:layout_alignStart="@+id/nameET"/>
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/infoET"
+        android:layout_height="80dp"
+        android:hint="Etwas über dich..."
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:layout_above="@+id/speichernButton"
+        android:layout_alignStart="@+id/geburtsdatumET"
+        android:layout_marginBottom="14dp"/>
+
+    <Button
+        android:text="Speichern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speichernButton"
+        android:layout_above="@+id/buttonLogout"
+        android:layout_alignStart="@+id/geburtsdatumET"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/testName"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/testGeb"
+        android:layout_below="@+id/testName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
